@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylev2.css">
+		<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+        <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Bungee+Shade">
+				<title>Bonsai Art</title>
+				<link rel="icon" type="image/png" href="projects.jpg"/>
+				<script>
+				var playing = 0;
+			function play(){
+				//make a variable that will be 0 when it's stopped
+				//and 1 when it's playing.
+
+					 var audio = document.getElementById("audio");
+					 var indicator = document.getElementById("listen");
+					 //if statement to check if playing is 0
+					 if (playing ==0) {
+					 audio.play();
+					 indicator.innerHTML = "Stop";
+				   playing = 1;
+				 	}
+					else {
+						playing = 0;
+						audio.pause();
+						audio.currentTime = 0;
+						indicator.innerHTML ="Listen";
+					}
+					 //set the playing to the appropriate opposite value
+					 //else do audio.stop()?
+					   //set the playing to the appropriate opposite value
+					  //change the element back to listen
+
+										 }
+			 </script>
+	</head>
+		<body>
+			<!--Begin nav bar-->
+      <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Projects</a>
+      <div class="dropdown-content">
+        <a href="hobbywebsite.html">Hobby Website</a>
+        <a href="bonsaiart.html">Bonsai Art</a>
+        <a href="dreamvacation.html">Dream Vacation</a>
+        <a href="scratchgamestory.html">Scratch Game/Story</a>
+        <a href="pythonselectapathadventure.html">Python Select-a-path Adventure</a>
+        <a href="imageartist.html">Image Artist</a>
+        <a href="finalproject.html">Final Project</a>
+      </div>
+    </li>
+		<li><a href="#" onclick="play()" id="listen">Listen</a></li>
+  </ul>
+			<!--end nav bar-->
+
+	<audio id="audio" src="Audio.mp3" style="display:none"></audio>
+	
+     <div id="main">
+				<center><h1 class="bungee">Bonsai Art</h1>
+			<p class="gochi">As an intro to Javascript, I created piece of art on BonsaiJS.</p>
+			<img src="bonsaiart.png" style="width:50%;height:50%;">
+			</center>
+			<pre>
+//black colors//
+new Rect(120, 90, 30, 30).fill("black").addTo(stage);
+new Rect(150, 90, 30, 30).fill("black").addTo(stage);
+new Rect(180, 90, 30, 30).fill("black").addTo(stage);
+new Rect(210, 90, 30, 30).fill("black").addTo(stage);
+new Rect(240, 90, 30, 30).fill("black").addTo(stage);
+new Rect(270, 90, 30, 30).fill("black").addTo(stage);
+new Rect(300, 90, 30, 30).fill("black").addTo(stage);
+new Rect(330, 90, 30, 30).fill("black").addTo(stage);
+new Rect(360, 90, 30, 30).fill("black").addTo(stage);
+new Rect(390, 90, 30, 30).fill("black").addTo(stage);
+new Rect(420, 90, 30, 30).fill("black").addTo(stage);
+new Rect(450, 90, 30, 30).fill("black").addTo(stage);
+new Rect(570, 90, 30, 30).fill("black").addTo(stage);
+new Rect(600, 90, 30, 30).fill("black").addTo(stage);
+new Rect(90, 120, 30, 30).fill("black").addTo(stage);
+new Rect(480, 120, 30, 30).fill("black").addTo(stage);
+new Rect(510, 120, 30, 30).fill("black").addTo(stage);
+new Rect(540, 120, 30, 30).fill("black").addTo(stage);
+new Rect(600, 120, 30, 30).fill("black").addTo(stage);
+new Rect(120, 150, 30, 30).fill("black").addTo(stage);
+new Rect(240, 150, 30, 30).fill("black").addTo(stage);
+new Rect(600, 150, 30, 30).fill("black").addTo(stage);
+new Rect(150, 180, 30, 30).fill("black").addTo(stage);
+new Rect(240, 180, 30, 30).fill("black").addTo(stage);
+new Rect(600, 180, 30, 30).fill("black").addTo(stage);
+new Rect(180, 210, 30, 30).fill("black").addTo(stage);
+new Rect(240, 210, 30, 30).fill("black").addTo(stage);
+new Rect(630, 210, 30, 30).fill("black").addTo(stage);
+new Rect(150, 240, 30, 30).fill("black").addTo(stage);
+new Rect(630, 240, 30, 30).fill("black").addTo(stage);
+new Rect(120, 270, 30, 30).fill("black").addTo(stage);
+new Rect(630, 270, 30, 30).fill("black").addTo(stage);
+new Rect(90, 300, 30, 30).fill("black").addTo(stage);
+new Rect(510, 300, 30, 30).fill("black").addTo(stage);
+new Rect(600, 300, 30, 30).fill("black").addTo(stage);
+new Rect(60, 330, 30, 30).fill("black").addTo(stage);
+new Rect(90, 330, 30, 30).fill("black").addTo(stage);
+new Rect(120, 330, 30, 30).fill("black").addTo(stage);
+new Rect(150, 330, 30, 30).fill("black").addTo(stage);
+new Rect(180, 330, 30, 30).fill("black").addTo(stage);
+new Rect(210, 330, 30, 30).fill("black").addTo(stage);
+new Rect(510, 330, 30, 30).fill("black").addTo(stage);
+new Rect(600, 330, 30, 30).fill("black").addTo(stage);
+new Rect(180, 360, 30, 30).fill("black").addTo(stage);
+new Rect(510, 360, 30, 30).fill("black").addTo(stage);
+new Rect(570, 360, 30, 30).fill("black").addTo(stage);
+new Rect(600, 360, 30, 30).fill("black").addTo(stage);
+new Rect(630, 360, 30, 30).fill("black").addTo(stage);
+new Rect(150, 390, 30, 30).fill("black").addTo(stage);
+new Rect(600, 390, 30, 30).fill("black").addTo(stage);
+new Rect(120, 420, 30, 30).fill("black").addTo(stage);
+new Rect(600, 420, 30, 30).fill("black").addTo(stage);
+new Rect(90, 450, 30, 30).fill("black").addTo(stage);
+new Rect(120, 450, 30, 30).fill("black").addTo(stage);
+new Rect(150, 450, 30, 30).fill("black").addTo(stage);
+new Rect(180, 450, 30, 30).fill("black").addTo(stage);
+new Rect(210, 450, 30, 30).fill("black").addTo(stage);
+new Rect(240, 450, 30, 30).fill("black").addTo(stage);
+new Rect(270, 450, 30, 30).fill("black").addTo(stage);
+new Rect(300, 450, 30, 30).fill("black").addTo(stage);
+new Rect(330, 450, 30, 30).fill("black").addTo(stage);
+new Rect(570, 450, 30, 30).fill("black").addTo(stage);
+new Rect(300, 480, 30, 30).fill("black").addTo(stage);
+new Rect(360, 480, 30, 30).fill("black").addTo(stage);
+new Rect(390, 480, 30, 30).fill("black").addTo(stage);
+new Rect(420, 480, 30, 30).fill("black").addTo(stage);
+new Rect(450, 480, 30, 30).fill("black").addTo(stage);
+new Rect(480, 480, 30, 30).fill("black").addTo(stage);
+new Rect(510, 480, 30, 30).fill("black").addTo(stage);
+new Rect(540, 480, 30, 30).fill("black").addTo(stage);
+new Rect(570, 480, 30, 30).fill("black").addTo(stage);
+new Rect(270, 510, 30, 30).fill("black").addTo(stage);
+new Rect(330, 510, 30, 30).fill("black").addTo(stage);
+new Rect(360, 510, 30, 30).fill("black").addTo(stage);
+new Rect(510, 510, 30, 30).fill("black").addTo(stage);
+new Rect(540, 510, 30, 30).fill("black").addTo(stage);
+new Rect(570, 510, 30, 30).fill("black").addTo(stage);
+new Rect(600, 510, 30, 30).fill("black").addTo(stage);
+new Rect(240, 540, 30, 30).fill("black").addTo(stage);
+new Rect(300, 540, 30, 30).fill("black").addTo(stage);
+new Rect(390, 540, 30, 30).fill("black").addTo(stage);
+new Rect(510, 540, 30, 30).fill("black").addTo(stage);
+new Rect(600, 540, 30, 30).fill("black").addTo(stage);
+new Rect(240, 570, 30, 30).fill("black").addTo(stage);
+new Rect(270, 570, 30, 30).fill("black").addTo(stage);
+new Rect(420, 570, 30, 30).fill("black").addTo(stage);
+new Rect(510, 570, 30, 30).fill("black").addTo(stage);
+new Rect(600, 570, 30, 30).fill("black").addTo(stage);
+new Rect(270, 600, 30, 30).fill("black").addTo(stage);
+new Rect(420, 600, 30, 30).fill("black").addTo(stage);
+new Rect(450, 600, 30, 30).fill("black").addTo(stage);
+new Rect(510, 600, 30, 30).fill("black").addTo(stage);
+new Rect(570, 600, 30, 30).fill("black").addTo(stage);
+new Rect(300, 630, 30, 30).fill("black").addTo(stage);
+new Rect(390, 630, 30, 30).fill("black").addTo(stage);
+new Rect(420, 630, 30, 30).fill("black").addTo(stage);
+new Rect(450, 630, 30, 30).fill("black").addTo(stage);
+new Rect(480, 630, 30, 30).fill("black").addTo(stage);
+new Rect(510, 630, 30, 30).fill("black").addTo(stage);
+new Rect(540, 630, 30, 30).fill("black").addTo(stage);
+new Rect(570, 630, 30, 30).fill("black").addTo(stage);
+new Rect(330, 660, 30, 30).fill("black").addTo(stage);
+new Rect(360, 660, 30, 30).fill("black").addTo(stage);
+new Rect(420, 660, 30, 30).fill("black").addTo(stage);
+new Rect(450, 660, 30, 30).fill("black").addTo(stage);
+new Rect(480, 660, 30, 30).fill("black").addTo(stage);
+new Rect(330, 690, 30, 30).fill("black").addTo(stage);
+new Rect(360, 690, 30, 30).fill("black").addTo(stage);
+new Rect(420, 690, 30, 30).fill("black").addTo(stage);
+new Rect(510, 690, 30, 30).fill("black").addTo(stage);
+new Rect(540, 690, 30, 30).fill("black").addTo(stage);
+new Rect(300, 720, 30, 30).fill("black").addTo(stage);
+new Rect(330, 720, 30, 30).fill("black").addTo(stage);
+new Rect(420, 720, 30, 30).fill("black").addTo(stage);
+new Rect(450, 720, 30, 30).fill("black").addTo(stage);
+new Rect(570, 720, 30, 30).fill("black").addTo(stage);
+new Rect(600, 720, 30, 30).fill("black").addTo(stage);
+new Rect(300, 720, 30, 30).fill("black").addTo(stage);
+new Rect(480, 720, 30, 30).fill("black").addTo(stage);
+new Rect(510, 720, 30, 30).fill("black").addTo(stage);
+new Rect(300, 750, 30, 30).fill("black").addTo(stage);
+new Rect(480, 750, 30, 30).fill("black").addTo(stage);
+new Rect(510, 750, 30, 30).fill("black").addTo(stage);
+new Rect(630, 750, 30, 30).fill("black").addTo(stage);
+new Rect(300, 780, 30, 30).fill("black").addTo(stage);
+new Rect(540, 780, 30, 30).fill("black").addTo(stage);
+new Rect(660, 780, 30, 30).fill("black").addTo(stage);
+new Rect(300, 810, 30, 30).fill("black").addTo(stage);
+new Rect(330, 810, 30, 30).fill("black").addTo(stage);
+new Rect(360, 810, 30, 30).fill("black").addTo(stage);
+new Rect(390, 810, 30, 30).fill("black").addTo(stage);
+new Rect(420, 810, 30, 30).fill("black").addTo(stage);
+new Rect(450, 810, 30, 30).fill("black").addTo(stage);
+new Rect(480, 810, 30, 30).fill("black").addTo(stage);
+new Rect(510, 810, 30, 30).fill("black").addTo(stage);
+new Rect(540, 810, 30, 30).fill("black").addTo(stage);
+new Rect(570, 810, 30, 30).fill("black").addTo(stage);
+new Rect(600, 810, 30, 30).fill("black").addTo(stage);
+new Rect(630, 810, 30, 30).fill("black").addTo(stage);
+new Rect(660, 810, 30, 30).fill("black").addTo(stage);
+//blue colors//
+new Rect(120, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(150, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(180, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(210, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(240, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(270, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(300, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(330, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(360, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(390, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(420, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(450, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(570, 120, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(150, 150, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(180, 150, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(210, 150, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(300, 150, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(330, 150, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(360, 150, 30, 30).fill("#4169E1").addTo(stage);
+new Rect(390, 150, 30, 30).fill("#4169E1").addTo(stage);
+		 </pre>
+      </div>
+     </body>
+   </html>

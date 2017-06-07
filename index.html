@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylev2.css">
+		<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+        <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Bungee+Shade">
+				<title>Michael's Portfolio</title>
+				<link rel="icon" type="image/png" href="projects.jpg"/>
+				<script>
+				var playing = 0;
+			function play(){
+				//make a variable that will be 0 when it's stopped
+				//and 1 when it's playing.
+
+					 var audio = document.getElementById("audio");
+					 var indicator = document.getElementById("listen");
+					 //if statement to check if playing is 0
+					 if (playing ==0) {
+					 audio.play();
+					 indicator.innerHTML = "Stop";
+				   playing = 1;
+				 	}
+					else {
+						playing = 0;
+						audio.pause();
+						audio.currentTime = 0;
+						indicator.innerHTML ="Listen";
+					}
+					 //set the playing to the appropriate opposite value
+					 //else do audio.stop()?
+					   //set the playing to the appropriate opposite value
+					  //change the element back to listen
+
+										 }
+			 </script>
+	</head>
+		<body>
+			<!--Begin nav bar-->
+      <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Projects</a>
+      <div class="dropdown-content">
+        <a href="hobbywebsite.html">Hobby Website</a>
+        <a href="bonsaiart.html">Bonsai Art</a>
+        <a href="dreamvacation.html">Dream Vacation</a>
+        <a href="scratchgamestory.html">Scratch Game/Story</a>
+        <a href="pythonselectapathadventure.html">Python Select-a-path Adventure</a>
+        <a href="imageartist.html">Image Artist</a>
+        <a href="finalproject.html">Final Project</a>
+      </div>
+    </li>
+		<li><a href="#" onclick="play()" id="listen">Listen</a></li>
+  </ul>
+			<!--end nav bar-->
+
+
+
+	<audio id="audio" src="Audio.mp3" style="display:none"></audio>
+
+			<div id="main">
+				<center><h1 class="bungee">My 2016-2017 CSE Portfolio</h1>
+			<p class="gochi">Welcome! Please explore my projects by clicking on the "Browse" Page.</p>
+			<p class="gochi">Press the "Listen" button to listen to the background music.</p>
+
+
+
+			<img src="projects.jpg" style="width:1800px;height:650px;" >
+
+			<p class="gochi">Photo credits to <a href="http://www.citlprojects.com/embedded-projects/ieee-internet-things-iot">citlprojects.com</a>
+
+				</center>
+				</div>
+		</body>
+	</head>
+</html>
